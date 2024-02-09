@@ -1,0 +1,479 @@
+@import url('https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,200&display=swap');
+@font-face {
+    font-family: signature;
+    src: url(Creattion\ Demo.otf);
+}
+@font-face {
+    font-family: wishes;
+    src: url(alsscrp.ttf);
+}
+@font-face {
+    font-family: textFont;
+    src: url(Grahamo-Luxury_Script_Font.otf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.alphabets-container{
+    position: absolute;
+    color: white;
+    font-family: 'Fira Sans Extra Condensed', sans-serif;
+    font-size: 22px;
+}
+.alphabets-container h1{
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    animation: text 5s linear infinite;
+}
+@keyframes text{
+    0%{
+        color: rgb(25, 25, 25);
+        text-shadow: none;
+    }
+    50%{
+        color: white;
+        box-shadow: 0 0 10px rgb(68, 67, 67),
+                    0 0 20px rgb(68, 67, 67),
+                    0 0 40px rgb(68, 67, 67),
+                    0 0 80px rgb(68, 67, 67),
+                    0 0 100px rgb(68, 67, 67);
+    }
+    100%{
+        color: rgb(25, 25, 25);
+    }
+}
+.alphabets-container h2{
+    position: absolute;
+    font-family: 'Tourney', sans-serif;
+    -webkit-box-reflect: above -140px linear-gradient(transparent, #0005);
+    font-size: 70px;
+    text-decoration: underline 4px;
+    top: 360px;
+    left: -1120px;
+    animation: year 7s linear infinite;
+}
+@keyframes year{
+    0%{
+        color: #ff8c3b;
+    }
+    50%{
+        color: #ffeb3b;
+        text-shadow: 0 0 10px #ff8c3b,
+                    0 0 40px #e57526,
+                    0 0 80px #d86d21,
+                    0 0 150px #a3551e,
+                    0 0 240px #ee6300;
+    }
+    100%{
+        color: #ff8c3b;
+    }
+}
+#happy{
+    position: absolute;
+    right: 550px;
+}
+#anniversary{
+    position: relative;
+    left: 550px;
+}
+.album{
+    border-radius: 20px;
+    width: 400px;
+    height: 500px;
+    text-align: center;
+    position: relative;
+}
+.page{
+    position: absolute;
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    perspective: 1500px;
+}
+#front, 
+#back{
+    background-color: black;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+    transition: transform 1s;
+}
+#glow-front, 
+#glow-back{
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    transform-origin: left;
+    transition: transform 1s;
+}
+#front{
+    z-index: 1;
+    backface-visibility: hidden;
+    border-left: solid brown 3px;
+}
+.flip #front,
+.flip #back,
+.flip #glow-front,
+.flip #glow-back{
+    transform: rotateY(-180deg);
+}
+button{
+    border: none;
+    background-color: transparent;
+    margin: 20px;
+    cursor: pointer;
+    transition: transform 1s;
+}
+button:hover i{
+    color: #8601F6;
+}
+i{
+    color: gray;
+    font-size: 50px;
+}
+#glow-front::before,
+#glow-front::after,
+#glow-back::before,
+#glow-back::after{
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    background: linear-gradient(50deg, red, green, yellow, blue, darkblue, brown, orange, rgb(127, 7, 105), rgb(78, 3, 78), magenta);
+    width: calc(100% + 8px);
+    height: calc(100% + 6px);
+    border-radius: 20px;
+    animation: glow 20s linear infinite;
+}
+@keyframes glow{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 500px 1000px;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+#glow-front::after,
+#glow-back::after{
+    filter: blur(70px);
+}
+#page1{
+    z-index: 10;
+}
+#page2{
+    z-index: 9;
+}
+#page3{
+    z-index: 8;
+}
+#page4{
+    z-index: 7;
+}
+#page5{
+    z-index: 6;
+}
+#page6{
+    z-index: 5;
+}
+#page7{
+    z-index: 4;
+}
+#page8{
+    z-index: 3;
+}
+#page9{
+    z-index: 2;
+}
+#last{
+    z-index: 1;
+}
+#page1 #front{
+    background-image: url(BG.jpg);
+    background-size: cover;
+    background-position: center;
+}
+#page1 #front h1{
+    font-family: textFont;
+    color: white;
+    position: relative;
+    font-size: 90px;
+    font-weight: lighter;
+    text-decoration: underline 2px;
+}
+#page1 #front p1 h1{
+    bottom: 110px;
+    right: 100px;
+}
+#page1 #front p2 h1{
+    bottom: 220px;
+    left: 100px;
+}
+#page1 #front h2{
+    font-family: textFont;
+    color: white;
+    position: relative;
+    font-size: 90px;
+    bottom: 165px;
+}
+#page1 #front h3{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    height: 150px;
+    width: 140px;
+    border-radius: 50px;
+    animation: cover 2s linear infinite;
+}
+@keyframes cover{
+    0%{
+        box-shadow: 0 0 30px #1d8d02,
+                    0 0 60px #FFF200,
+                    0 0 90px #FF0000;
+    }
+    40%{
+        box-shadow: 0 0 30px #FF0000,
+                    0 0 60px #1d8d02,
+                    0 0 90px #FFF200;
+    }
+    80%{
+        box-shadow: 0 0 30px #FFF200,
+                    0 0 60px #FF0000,
+                    0 0 90px #1d8d02;
+    }
+    100%{
+        box-shadow: 0 0 30px #1d8d02,
+                    0 0 60px #FFF200,
+                    0 0 90px #FF0000;
+    }
+}
+#page1 #front img1 img{
+    position: absolute;
+    border-radius: 50px;
+    border: dotted goldenrod 3px;
+    bottom: 172px;
+    right: 127.5px;
+}
+#page1 #front img2 img{
+    width: 200px;
+    top: 365.5px;
+    right: 200px;
+    border-radius: 0 0 0 20px;
+    position: absolute;
+}
+#page1 #front img3 img{
+    position: absolute;
+    width: 130px;
+    top: 342px;
+    left: 277px;
+    border-radius: 0 0 50px 0;
+}
+#page2 #front{
+    background-image: url(2.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page2 #back{
+    background-image: url(3.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page3 #front{
+    background-image: url(4.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page3 #back{
+    background-image: url(5.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page4 #front{
+    background-image: url(6.jpg);
+    background-size: cover;
+}
+#page4 #back{
+    background-image: url(7.jpg);
+    background-size: cover;
+}
+#page5 #front{
+    background-image: url(8.jpg);
+    background-size: cover;
+}
+#page5 #back{
+    background-image: url(9.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page6 #front{
+    background-image: url(10.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page6 #back{
+    background-image: url(11.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page7 #front{
+    background-image: url(12.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page7 #back{
+    background-image: url(13.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page8 #front{
+    background-image: url(14.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page8 #back{
+    background-image: url(15.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page9 #front{
+    background-image: url(16.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#page9 #back{
+    background-image: url(family-photo.jpg);
+    background-position: center;
+    background-size: cover;
+}
+#glow-front{
+    z-index: 1;
+    backface-visibility: hidden;
+}
+#last #back{
+    background-image: url(intro-bg.jpg);
+    background-size: cover;
+}
+#last #back h4{
+    font-family: wishes;
+    font-size: 25px;
+    position: absolute;
+    bottom: 450px;
+    color: white;
+    transform: scale(-1, 1);
+}
+#last #back p{
+    position: relative;
+    font-size: 25px;
+    color: white;
+    width: 300px;
+    transform: scale(-1, 1);
+    font-family: wishes;
+}
+#last #back h6{
+    position: absolute;
+    font-size: 30px;
+    color: white;
+    top: 450px;
+    transform: scale(-1, 1);
+    font-family: signature;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 1200px){
+
+    .alphabets-container h1{
+        font-size: 100px;
+        writing-mode: horizontal-tb;
+    }
+    .alphabets-container h2{
+        -webkit-box-reflect: above -190px linear-gradient(transparent, #0005);
+        font-size: 100px;
+        top: -1600px;
+        left: 450px;
+        animation: year 7s linear infinite;
+    }
+    #happy{
+        bottom: 650px;
+        right: 200px;
+    }
+    #anniversary{
+        top: 650px;
+        left: 30px;
+    }
+    button{
+        margin: 40px;
+    }
+    i{
+        font-size: 70px;
+    }
+    .album{
+        width: 400px;
+        height: 800px;
+        text-align: center;
+        position: relative;
+    }
+    #page1 #front h3{
+        top: 320px;
+        height: 240px;
+    }
+    #page1 #front img1 img{
+        bottom: 230px;
+        height: 250px;
+    }
+    #page1 #front img2 img{
+        height: 200px;
+        top: 600px;
+    }
+    #page1 #front img3 img{
+        height: 180px;
+        top: 630px;
+        border-radius: 0 0 50px 0;
+    }
+    #page1 #front h1{
+        font-size: 150px;
+    }
+    #page1 #front p1 h1{
+        bottom: 200px;
+    }
+    #page1 #front p2 h1{
+        bottom: 310px;
+    }
+    #page1 #front h2{
+        font-size: 100px;
+        bottom: 245px;
+    }
+    #last #back h4{
+        font-size: 30px;
+        bottom: 750px;
+    }
+    #last #back p{
+        font-size: 35px;
+        width: 350px;
+    }
+    #last #back h6{
+        font-size: 40px;
+        top: 730px;
+        font-weight: lighter;
+    }
+}
