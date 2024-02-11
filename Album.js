@@ -1,3 +1,5 @@
+const width_previous = document.querySelector('#width-previous');
+const width_next = document.querySelector('#width-next');
 const previousBtn = document.querySelector('#previous');
 const nextBtn = document.querySelector('#next');
 const album = document.querySelector('#album');
@@ -11,6 +13,9 @@ const page7 = document.querySelector('#page7');
 const page8 = document.querySelector('#page8');
 const page9= document.querySelector('#page9');
 const last = document.querySelector('#last');
+
+width_previous.addEventListener('click', previousPage);
+width_next.addEventListener('click', nextPage);
 
 previousBtn.addEventListener('click', previousPage);
 nextBtn.addEventListener('click', nextPage);

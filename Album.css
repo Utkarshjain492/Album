@@ -141,6 +141,10 @@ button{
     cursor: pointer;
     transition: transform 1s;
 }
+#width-previous,
+#width-next{
+    display: none;
+}
 button:hover i{
     color: #8601F6;
 }
@@ -409,29 +413,39 @@ i{
     .alphabets-container h2{
         -webkit-box-reflect: above -190px linear-gradient(transparent, #0005);
         font-size: 100px;
-        top: -1600px;
+        top: -1900px;
         left: 450px;
         animation: year 7s linear infinite;
     }
     #happy{
-        bottom: 650px;
+        bottom: 700px;
         right: 200px;
     }
     #anniversary{
-        top: 650px;
+        top: 900px;
         left: 30px;
     }
     button{
-        margin: 40px;
+        position: relative;
+        margin: 60px;
+        top: 650px;
     }
     i{
-        font-size: 70px;
+        font-size: 150px;
+    }
+    #width-previous,
+    #width-next{
+        display: flex;
+    }
+    #previous,
+    #next{
+        display: none;
     }
     .album{
         width: 400px;
         height: 800px;
         text-align: center;
-        position: relative;
+        position: absolute;
     }
     #page1 #front h3{
         top: 320px;
