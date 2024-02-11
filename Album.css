@@ -28,6 +28,7 @@ body{
     font-family: 'Fira Sans Extra Condensed', sans-serif;
     font-size: 22px;
 }
+#happy,
 .alphabets-container h1{
     writing-mode: vertical-rl;
     text-orientation: upright;
@@ -417,11 +418,11 @@ i{
         animation: year 7s linear infinite;
     }
     #happy{
-        bottom: 300px;
-        left: 0;
+        bottom: 250px;
+        left: 70px;
     }
     #anniversary{
-        bottom: 250px;
+        bottom: 200px;
         left: 0;
     }
     button{
@@ -442,55 +443,56 @@ i{
         display: none;
     }
     .album{
-        width: 200px;
+        width: 150px;
         height: 300px;
         text-align: center;
         position: absolute;
     }
     #page1 #front h3{
-        width: 100px;
-        height: 100px;
+        width: 80px;
+        height: 80px;
     }
     #page1 #front img1 img{
-        width: 100px;
-        height: 100px;
-        top: 97px;
-        left: 47px;
+        width: 80px;
+        height: 80px;
+        top: 107px;
+        left: 32px;
     }
     #page1 #front img2 img{
-        width: 100px;
-        top: 233px;
+        width: 80px;
+        top: 247px;
         left: 0;
     }
     #page1 #front img3 img{
-        width: 80px;
-        height: 80px;
-        top: 224px;
-        left: 125px;
-        border-radius: 0 0 35px 0;
+        width: 60px;
+        height: 70px;
+        top: 233px;
+        left: 93px;
+        border-radius: 0 0 30px 0;
     }
     #page1 #front h1{
         font-size: 50px;
     }
     #page1 #front p1 h1{
-        bottom: 75px;
-        left: -60px;
+        bottom: 72px;
+        left: -40px;
     }
     #page1 #front p2 h1{
-        bottom: 130px;
-        left: 60px;
+        bottom: 120px;
+        left: 40px;
     }
     #page1 #front h2{
         font-size: 50px;
         bottom: 100px;
+        left: 5px;
     }
     #last #back h4{
-        font-size: 20px;
+        font-size: 15px;
         bottom: 265px;
     }
     #last #back p{
-        font-size: 15px;
-        width: 180px;
+        font-size: 12px;
+        width: 120px;
     }
     #last #back h6{
         font-size: 30px;
