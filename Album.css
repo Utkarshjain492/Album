@@ -366,7 +366,7 @@ i{
     background-size: cover;
 }
 #page9 #back{
-    background-image: url(family-photo.JPG);
+    background-image: url(17.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -413,25 +413,25 @@ i{
     .alphabets-container h2{
         -webkit-box-reflect: above -190px linear-gradient(transparent, #0005);
         font-size: 100px;
-        top: -1850px;
+        top: -1100px;
         left: 450px;
         animation: year 7s linear infinite;
     }
     #happy{
-        bottom: 700px;
-        right: 200px;
+        bottom: 500px;
+        right: 400px;
     }
     #anniversary{
-        top: 900px;
+        top: 600px;
         left: 30px;
     }
     button{
         position: relative;
         margin: 60px;
-        top: 650px;
+        top: 400px;
     }
     i{
-        font-size: 150px;
+        font-size: 100px;
     }
     #width-previous,
     #width-next{
@@ -442,52 +442,55 @@ i{
         display: none;
     }
     .album{
-        width: 400px;
-        height: 800px;
+        width: 350px;
+        height: 500px;
         text-align: center;
         position: absolute;
     }
     #page1 #front h3{
-        top: 320px;
-        height: 240px;
+        width: 150px;
+        height: 150px;
     }
     #page1 #front img1 img{
-        bottom: 230px;
-        height: 250px;
+        width: 150px;
+        height: 150px;
+        left: 97px;
     }
     #page1 #front img2 img{
-        height: 200px;
-        top: 600px;
+        width: 150px;
+        top: 400px;
+        left: 0;
     }
     #page1 #front img3 img{
-        height: 180px;
-        top: 630px;
+        height: 150px;
+        top: 357px;
+        left: 227px;
         border-radius: 0 0 50px 0;
     }
     #page1 #front h1{
-        font-size: 150px;
+        font-size: 100px;
     }
     #page1 #front p1 h1{
-        bottom: 200px;
+        bottom: 100px;
     }
     #page1 #front p2 h1{
-        bottom: 310px;
+        bottom: 230px;
     }
     #page1 #front h2{
-        font-size: 100px;
-        bottom: 245px;
+        font-size: 80px;
+        bottom: 160px;
     }
     #last #back h4{
         font-size: 30px;
-        bottom: 750px;
+        bottom: 450px;
     }
     #last #back p{
-        font-size: 35px;
-        width: 350px;
+        font-size: 25px;
+        width: 300px;
     }
     #last #back h6{
         font-size: 40px;
-        top: 730px;
+        top: 440px;
         font-weight: lighter;
     }
 }
